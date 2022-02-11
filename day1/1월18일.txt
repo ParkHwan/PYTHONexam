@@ -1,0 +1,30 @@
+>>> v1 = 100
+>>> v2 = 50
+>>> r1 = v1 + v2
+>>> r2 = v1 - v2
+>>> r3 = v1 * v2
+>>> r4 = v1 / v2
+>>> print("r1=", r1)
+r1= 150
+>>> print("r2=", r2)
+r2= 50
+>>> print("r3=", r3)
+r3= 5000
+>>> print("r4=", r4)
+r4= 2.0
+>>> name1="박"
+>>> name2 = " "
+>>> name3 = "환"
+>>> print(name1, name2, name3, sep = "")
+박 환
+>>> print(name1, name2, name3, sep = "@")
+박@ @환
+>>> print(name1, name2, name3, sep = "---")
+박--- ---환
+>>> number1 = 10
+>>> number2 = 25
+>>> number3 = 34
+>>> sum = number1 + number2 + number3
+>>> ave = sum / 3
+>>> print("합은", sum, "이고 평균은", ave, "입니다.")
+합은 69 이고 평균은 23.0 입니다.
