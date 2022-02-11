@@ -9,7 +9,7 @@ class Account:
 
     def withdraw(self, amount):
         if self.balance < amount:
-            self.balance = " 잔액을 부족합니다"
+            self.balance = " 잔액이 부족합니다"
         else:
             self.balance -= amount
 
@@ -24,7 +24,7 @@ obj2 = Account("555-444-9999999", "손이안", 100000)
 obj1.deposit(100000)
 printAccount(obj1)
 
-obj2.withdraw(30000)
+obj2.withdraw(130000)
 printAccount(obj2)
 
 
