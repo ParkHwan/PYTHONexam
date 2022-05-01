@@ -21,12 +21,22 @@ for file_name in file_names:
     total = pd.concat([total, temp]) #전체 데이터프레임에 추가하여 넣는다
 
 total.to_csv("total.csv")"""
-str = '무궁화 꽃이 피었습니다.'
-new_str = str.replace('무궁화', '진달래')
-'자바 언어를 알기 쉽게 설명하였다'.replace('자바', '파이썬')
-idx = str.index('꽃')
-
-print(new_str, idx)
-# 이 시점에서 str의 값은 무엇일까요?
-print(str)
-print('자바 언어를 알기 쉽게 설명하였다'.replace('자바', '파이썬'))
+def solve(a):
+    ans = 0
+    for n in a:
+        ans += n
+    return ans
+a = [1, 2, 3, 4]
+print(solve(a))
+# 백준 4637번 문제
+result = []
+for b in range(10001):
+    if b < 100:
+        result.append(b + (b // 10) + (b % 10))
+    elif b < 1000:
+        result.append((b + (b // 100) + ((b - (b // 100) * 100) // 10) + ((b - (b // 100) * 100) % 10)))
+    elif b < 10001:
+        result.append(b + (b // 1000) + ((b - (b // 1000) * 1000) // 100) + (((b - (b // 1000) * 1000) - ((b - (b // 1000) * 1000) // 100) * 100) // 10)
+                        + ((b - (b // 1000) * 1000) - ((b - (b // 1000) * 1000) // 100) * 100)  % 10)
+    if not b in result:
+        print(b)
